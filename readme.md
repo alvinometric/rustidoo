@@ -11,6 +11,10 @@ To run the code for issue 282, do
 
 `cargo watch -x "run --example 282"`
 
+## Create a new example
+
+`cargo run inc_example`
+
 ## TODO
 
 - [ ] Script to dynamically run the latest day
