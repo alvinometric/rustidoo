@@ -26,7 +26,10 @@ fn fraction_math(a: &str, operation: &str, b: &str) -> String {
     return format!("{}", Fraction::from(num_result));
 }
 
+// Write a function that can do the 4 basic operations
+// (add, subtract, multiply and divide) on two fractions.
+// Return the most simplified form of the result
 fn main() {
     let r = fraction_math("3/4", "add", "3/4");
-    println!("{}", r);
+    println!("{}", r); // -> 3/2
 }
