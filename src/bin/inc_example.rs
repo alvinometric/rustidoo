@@ -12,5 +12,5 @@ fn get_latest_dir() -> i32 {
 
 fn main() {
     let latest = get_latest_dir();
-    println!("Hello, world!");
+    println!("{}", latest);
 }

@@ -18,7 +18,7 @@ To run the code for issue 282, do
 
 ## Create a new example
 
-`cargo run inc_example`
+`cargo run --bin inc_example`
 
 ## TODO
 
