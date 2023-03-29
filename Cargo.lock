@@ -1398,6 +1398,7 @@ dependencies = [
  "cargo-watch",
  "fraction",
  "pico-args",
+ "rand",
 ]
 
 [[package]]
