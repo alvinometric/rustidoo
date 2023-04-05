@@ -23,4 +23,4 @@ To run the code for issue 282, do
 ## TODO
 
 - [ ] Script to dynamically run the latest day
-- [ ] Script to create a new entry
+- [x] Script to create a new entry

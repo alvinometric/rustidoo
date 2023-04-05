@@ -39,6 +39,9 @@ fn main() {
         Err(e) => panic!("Error creating file. {}", e),
     };
 
-    println!("Done!");
+    println!("✅ Created a new ./examples folder");
+    println!("🚀 Run the following command to start the latest example");
+    println!("👇");
+    println!(r#"cargo watch -x "run --example {}""#, latest + 1);
     return;
 }
