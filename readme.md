@@ -7,6 +7,16 @@ I'm learning Rust and wanted a way to keep practicing. These are my solutions to
   <p align="center">Artwork by <a href="github.com/steveruizok">@steveruizok</a> </p>
 </div>
 
+## Install dependencies
+
+Check https://github.com/watchexec/cargo-watch
+
+or
+
+```sh
+cargo install cargo-watch --locked
+```
+
 ## Run
 
 To run the code for issue 282, do

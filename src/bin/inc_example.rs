@@ -1,3 +1,4 @@
+use std::error::Error;
 use std::fs;
 
 // go through the /examples folder
@@ -24,24 +25,18 @@ fn get_latest_dir() -> i32 {
     return greatest;
 }
 
-fn main() {
+fn main() -> Result<(), Box<dyn Error>> {
     let latest = get_latest_dir();
     let new_dir = format!("./examples/{}", latest + 1);
     let new_file = format!("{}/main.rs", new_dir);
 
-    match fs::create_dir(new_dir) {
-        Ok(dir) => dir,
-        Err(e) => panic!("Error creating dir. {}", e),
-    };
+    fs::create_dir(new_dir)?;
 
-    match fs::write(new_file, "") {
-        Ok(file) => file,
-        Err(e) => panic!("Error creating file. {}", e),
-    };
+    fs::write(new_file, "")?;
 
     println!("✅ Created a new ./examples folder");
     println!("🚀 Run the following command to start the latest example");
     println!("👇");
     println!(r#"cargo watch -x "run --example {}""#, latest + 1);
-    return;
+    Ok(())
 }
